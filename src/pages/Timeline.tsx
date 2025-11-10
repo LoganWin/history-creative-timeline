@@ -2,6 +2,9 @@ const events = [
   { year: "1950", description: "Another milestone..." },
   { year: "1900", description: "Major historical event..." },
   { year: "1980", description: "Yet another event..." },
+  { year: "1980", description: "Yet another event..." },
+  { year: "1980", description: "Yet another event..." },
+  { year: "1980", description: "Yet another event..." },
   // Add more events as needed
 ];
 
@@ -12,7 +15,7 @@ export default function Timeline() {
       <div className="absolute left-1/2 top-0 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-indigo-500 to-pink-500 z-0"></div>
 
       {/* Timeline items */}
-      <div className="space-y-16 relative z-10">
+      <div className="space-y-32 relative z-10">
         {events.map((event, idx) => {
           const isLeft = idx % 2 === 0;
           return (
