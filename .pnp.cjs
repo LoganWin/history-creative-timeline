@@ -35,6 +35,8 @@ const RAW_RUNTIME_STATE =
           ["@types/react-router-dom", "npm:5.3.3"],\
           ["@vitejs/plugin-react-swc", "virtual:dbdec4dc0fd7be3eaab2af63e0c999cd94bcd3a052bb043f79d4cb5ebe37a7bb41f03e09a8b52b1cef9e8b2fd0d666bc0b123b9ff7dc55e623a0fedb3737da2d#npm:4.2.0"],\
           ["autoprefixer", "virtual:dbdec4dc0fd7be3eaab2af63e0c999cd94bcd3a052bb043f79d4cb5ebe37a7bb41f03e09a8b52b1cef9e8b2fd0d666bc0b123b9ff7dc55e623a0fedb3737da2d#npm:10.4.21"],\
+          ["daisyui", "npm:5.4.7"],\
+          ["flyonui", "npm:2.4.1"],\
           ["history-creative-timeline", "workspace:."],\
           ["jiti", "npm:2.6.1"],\
           ["postcss", "npm:8.5.6"],\
@@ -318,6 +320,36 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/unplugged/@esbuild-win32-x64-npm-0.25.12-2425a2e173/node_modules/@esbuild/win32-x64/",\
         "packageDependencies": [\
           ["@esbuild/win32-x64", "npm:0.25.12"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@floating-ui/core", [\
+      ["npm:1.7.3", {\
+        "packageLocation": "../../../.yarn/berry/cache/@floating-ui-core-npm-1.7.3-2fe40b3781-10c0.zip/node_modules/@floating-ui/core/",\
+        "packageDependencies": [\
+          ["@floating-ui/core", "npm:1.7.3"],\
+          ["@floating-ui/utils", "npm:0.2.10"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@floating-ui/dom", [\
+      ["npm:1.7.4", {\
+        "packageLocation": "../../../.yarn/berry/cache/@floating-ui-dom-npm-1.7.4-e1f6d76b3d-10c0.zip/node_modules/@floating-ui/dom/",\
+        "packageDependencies": [\
+          ["@floating-ui/core", "npm:1.7.3"],\
+          ["@floating-ui/dom", "npm:1.7.4"],\
+          ["@floating-ui/utils", "npm:0.2.10"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@floating-ui/utils", [\
+      ["npm:0.2.10", {\
+        "packageLocation": "../../../.yarn/berry/cache/@floating-ui-utils-npm-0.2.10-5e22e99242-10c0.zip/node_modules/@floating-ui/utils/",\
+        "packageDependencies": [\
+          ["@floating-ui/utils", "npm:0.2.10"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1414,6 +1446,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["daisyui", [\
+      ["npm:5.4.7", {\
+        "packageLocation": "../../../.yarn/berry/cache/daisyui-npm-5.4.7-12d8d2c886-10c0.zip/node_modules/daisyui/",\
+        "packageDependencies": [\
+          ["daisyui", "npm:5.4.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["debug", [\
       ["npm:4.4.3", {\
         "packageLocation": "../../../.yarn/berry/cache/debug-npm-4.4.3-0105c6123a-10c0.zip/node_modules/debug/",\
@@ -1646,6 +1687,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["flyonui", [\
+      ["npm:2.4.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/flyonui-npm-2.4.1-deb64b4607-10c0.zip/node_modules/flyonui/",\
+        "packageDependencies": [\
+          ["@floating-ui/dom", "npm:1.7.4"],\
+          ["flyonui", "npm:2.4.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["foreground-child", [\
       ["npm:3.3.1", {\
         "packageLocation": "../../../.yarn/berry/cache/foreground-child-npm-3.3.1-b7775fda04-10c0.zip/node_modules/foreground-child/",\
@@ -1758,6 +1809,8 @@ const RAW_RUNTIME_STATE =
           ["@types/react-router-dom", "npm:5.3.3"],\
           ["@vitejs/plugin-react-swc", "virtual:dbdec4dc0fd7be3eaab2af63e0c999cd94bcd3a052bb043f79d4cb5ebe37a7bb41f03e09a8b52b1cef9e8b2fd0d666bc0b123b9ff7dc55e623a0fedb3737da2d#npm:4.2.0"],\
           ["autoprefixer", "virtual:dbdec4dc0fd7be3eaab2af63e0c999cd94bcd3a052bb043f79d4cb5ebe37a7bb41f03e09a8b52b1cef9e8b2fd0d666bc0b123b9ff7dc55e623a0fedb3737da2d#npm:10.4.21"],\
+          ["daisyui", "npm:5.4.7"],\
+          ["flyonui", "npm:2.4.1"],\
           ["history-creative-timeline", "workspace:."],\
           ["jiti", "npm:2.6.1"],\
           ["postcss", "npm:8.5.6"],\

@@ -222,6 +222,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@floating-ui/core@npm:^1.7.3":
+  version: 1.7.3
+  resolution: "@floating-ui/core@npm:1.7.3"
+  dependencies:
+    "@floating-ui/utils": "npm:^0.2.10"
+  checksum: 10c0/edfc23800122d81df0df0fb780b7328ae6c5f00efbb55bd48ea340f4af8c5b3b121ceb4bb81220966ab0f87b443204d37105abdd93d94846468be3243984144c
+  languageName: node
+  linkType: hard
+
+"@floating-ui/dom@npm:^1.7.1":
+  version: 1.7.4
+  resolution: "@floating-ui/dom@npm:1.7.4"
+  dependencies:
+    "@floating-ui/core": "npm:^1.7.3"
+    "@floating-ui/utils": "npm:^0.2.10"
+  checksum: 10c0/da6166c25f9b0729caa9f498685a73a0e28251613b35d27db8de8014bc9d045158a23c092b405321a3d67c2064909b6e2a7e6c1c9cc0f62967dca5779f5aef30
+  languageName: node
+  linkType: hard
+
+"@floating-ui/utils@npm:^0.2.10":
+  version: 0.2.10
+  resolution: "@floating-ui/utils@npm:0.2.10"
+  checksum: 10c0/e9bc2a1730ede1ee25843937e911ab6e846a733a4488623cd353f94721b05ec2c9ec6437613a2ac9379a94c2fd40c797a2ba6fa1df2716f5ce4aa6ddb1cf9ea4
+  languageName: node
+  linkType: hard
+
 "@isaacs/cliui@npm:^8.0.2":
   version: 8.0.2
   resolution: "@isaacs/cliui@npm:8.0.2"
@@ -1155,6 +1181,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"daisyui@npm:^5.4.7":
+  version: 5.4.7
+  resolution: "daisyui@npm:5.4.7"
+  checksum: 10c0/a37423a14a404559c722393f6b95acfa4764a1a181852ca62518905766c1a1b58f89b1bc733d969e13763602f6da70c16837b84281057b6558720d8363e9139a
+  languageName: node
+  linkType: hard
+
 "debug@npm:4, debug@npm:^4.3.4":
   version: 4.4.3
   resolution: "debug@npm:4.4.3"
@@ -1395,6 +1428,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"flyonui@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "flyonui@npm:2.4.1"
+  dependencies:
+    "@floating-ui/dom": "npm:^1.7.1"
+  checksum: 10c0/a36f45ef7c874e718438f899fef2b0d8cea13a8dad539f877fe5e4d08adcc8449a1f351fc47eb80c6ec9925e03730c6dfe58dc34361a15e37425b92e1785051d
+  languageName: node
+  linkType: hard
+
 "foreground-child@npm:^3.1.0":
   version: 3.3.1
   resolution: "foreground-child@npm:3.3.1"
@@ -1508,6 +1550,8 @@ __metadata:
     "@types/react-router-dom": "npm:^5.3.3"
     "@vitejs/plugin-react-swc": "npm:^4.1.0"
     autoprefixer: "npm:^10.4.21"
+    daisyui: "npm:^5.4.7"
+    flyonui: "npm:^2.4.1"
     jiti: "npm:^2.6.1"
     postcss: "npm:^8.5.6"
     react: "npm:^19.1.1"
