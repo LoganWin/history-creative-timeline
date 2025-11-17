@@ -63,11 +63,7 @@ export default function Contact() {
         </section>
 
         <section className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <h2 className="text-2xl font-semibold mb-4">Works Cited</h2>
-          <p className="text-slate-200/90 mb-6">
-            Core references used to build the interactive cards. Each citation includes a summary plus a direct link for
-            verification.
-          </p>
+          <h2 className="text-2xl font-semibold mb-4 text-center">Works Cited</h2>
           <ul className="space-y-4 text-slate-100/90">
             {sources.map((source) => (
               <li key={source.label} className="rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -92,8 +88,7 @@ export default function Contact() {
             <div>
               <h3 className="text-lg font-semibold text-white mb-2">Technical Stack</h3>
               <p>
-                Built with React, Vite, and Tailwind CSS. Timeline entries are stored in a local data array for now,
-                making it easy to adjust copy without a backend.
+                Built with React, Typescript, Vite, and Tailwind CSS.
               </p>
             </div>
             <div>
