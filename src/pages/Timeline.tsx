@@ -62,96 +62,96 @@ export default function Timeline() {
   const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
 
   return (
-    <section className="relative max-w-5xl mx-auto py-16 min-h-screen">
-      {/* Vertical line */}
-      <div className="absolute left-1/2 top-0 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-indigo-500 to-pink-500 z-0" />
+    <main className="min-h-[calc(100vh-4rem)] bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-100">
+      <section className="relative max-w-5xl mx-auto py-16 min-h-screen">
+        {/* Vertical line */}
+        <div className="absolute left-1/2 top-0 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-indigo-500 to-pink-500 z-0" />
 
-      {/* Timeline items */}
-      <div className="space-y-32 relative z-10">
-        {events.map((event, idx) => {
-          const isLeft = idx % 2 === 0;
-          const isFlipped = flippedIndex === idx;
+        {/* Timeline items */}
+        <div className="space-y-32 relative z-10">
+          {events.map((event, idx) => {
+            const isLeft = idx % 2 === 0;
+            const isFlipped = flippedIndex === idx;
 
-          return (
-            <div
-              className="relative flex items-center"
-              key={event.year + idx}
-            >
+            return (
               <div
-                className={`w-full max-w-md md:max-w-lg ${
-                  isLeft ? "mr-auto pr-8 text-right" : "ml-auto pl-8 text-left"
-                } relative z-30`}
+                className="relative flex items-center"
+                key={event.year + idx}
               >
-                <div className="card w-full min-h-[260px] bg-base-100 shadow-2xl border border-base-content/10 overflow-hidden flex flex-col sm:flex-row">
-                  {isFlipped ? (
-                    // DETAILS SIDE — always left-justified
-                    <div className="card-body gap-4 p-6 sm:p-8 flex-1 items-start text-left">
-                      <div className="w-full">
-                        <p className="text-sm uppercase tracking-wide text-base-content/70 mb-1">
-                          {event.year}
-                        </p>
-                        <h5 className="card-title mb-4">{event.label}</h5>
-                        <p className="text-base-content leading-relaxed break-words whitespace-pre-wrap">
-                          {event.description}
-                        </p>
-                      </div>
-                      <div className="card-actions mt-auto justify-end self-end">
-                        <button
-                          className="btn btn-primary"
-                          onClick={() => setFlippedIndex(null)}
-                        >
-                          Back
-                        </button>
-                      </div>
-                    </div>
-                  ) : (
-                    // FRONT SIDE — year + header alignment alternates by side
-                    <>
-                      <figure className="bg-base-200 sm:w-48 w-full flex-shrink-0 flex items-center justify-center p-6">
-                        <img
-                          src={example}
-                          alt={`Visual for ${event.year}`}
-                          className="h-32 sm:h-40 w-full object-contain"
-                        />
-                      </figure>
-                      <div
-                        className={`card-body gap-3 p-6 sm:p-8 flex-1 min-w-0 ${
-                          isLeft ? "items-end text-right" : "items-start text-left"
-                        }`}
-                      >
+                <div
+                  className={`w-full max-w-md md:max-w-lg ${
+                    isLeft ? "mr-auto pr-8 text-right" : "ml-auto pl-8 text-left"
+                  } relative z-30`}
+                >
+                  <div className="card w-full min-h-[260px] bg-base-100 shadow-2xl border border-base-content/10 overflow-hidden flex flex-col sm:flex-row">
+                    {isFlipped ? (
+                      <div className="card-body gap-4 p-6 sm:p-8 flex-1 items-start text-left">
                         <div className="w-full">
-                          <p
-                            className={`text-sm uppercase tracking-wide text-base-content/70 mb-1 ${
-                              isLeft ? "text-right" : "text-left"
-                            }`}
-                          >
+                          <p className="text-sm uppercase tracking-wide text-base-content/70 mb-1">
                             {event.year}
                           </p>
-                          <h5
-                            className={`card-title mb-0.5 ${
-                              isLeft ? "text-right" : "text-left"
-                            }`}
-                          >
-                            {event.label}
-                          </h5>
+                          <h5 className="card-title mb-4">{event.label}</h5>
+                          <p className="text-base-content leading-relaxed break-words whitespace-pre-wrap">
+                            {event.description}
+                          </p>
                         </div>
                         <div className="card-actions mt-auto justify-end self-end">
                           <button
                             className="btn btn-primary"
-                            onClick={() => setFlippedIndex(idx)}
+                            onClick={() => setFlippedIndex(null)}
                           >
-                            Learn More
+                            Back
                           </button>
                         </div>
                       </div>
-                    </>
-                  )}
+                    ) : (
+                      <>
+                        <figure className="bg-base-200 sm:w-48 w-full flex-shrink-0 flex items-center justify-center p-6">
+                          <img
+                            src={example}
+                            alt={`Visual for ${event.year}`}
+                            className="h-32 sm:h-40 w-full object-contain"
+                          />
+                        </figure>
+                        <div
+                          className={`card-body gap-3 p-6 sm:p-8 flex-1 min-w-0 ${
+                            isLeft ? "items-end text-right" : "items-start text-left"
+                          }`}
+                        >
+                          <div className="w-full">
+                            <p
+                              className={`text-sm uppercase tracking-wide text-base-content/70 mb-1 ${
+                                isLeft ? "text-right" : "text-left"
+                              }`}
+                            >
+                              {event.year}
+                            </p>
+                            <h5
+                              className={`card-title mb-0.5 ${
+                                isLeft ? "text-right" : "text-left"
+                              }`}
+                            >
+                              {event.label}
+                            </h5>
+                          </div>
+                          <div className="card-actions mt-auto justify-end self-end">
+                            <button
+                              className="btn btn-primary"
+                              onClick={() => setFlippedIndex(idx)}
+                            >
+                              Learn More
+                            </button>
+                          </div>
+                        </div>
+                      </>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
-    </section>
+            );
+          })}
+        </div>
+      </section>
+    </main>
   );
 }

@@ -15,9 +15,8 @@ export default function Navbar() {
         {/* Navigation */}
         <nav className="hidden md:flex items-center gap-8 text-sm text-gray-200/90">
           <Link className="hover:text-white transition-colors" to="/timeline">Timeline</Link>
-          <Link className="hover:text-white transition-colors" to="/projects">Projects</Link>
           <Link className="hover:text-white transition-colors" to="/about">About</Link>
-          <Link className="hover:text-white transition-colors" to="/contact">Contact</Link>
+          <Link className="hover:text-white transition-colors" to="/contact">Info</Link>
         </nav>
       </div>
     </header>

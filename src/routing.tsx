@@ -3,6 +3,7 @@ import Timeline from './pages/Timeline';
 import About from './pages/About';
 import App from './App';
 import Layout from './components/Layout';
+import Contact from './pages/Contact';
 
 export function Routing() {
     return (
@@ -12,8 +13,7 @@ export function Routing() {
                     <Route path="/" element={<App />} />
                     <Route path="/timeline" element={<Timeline />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/projects" element={<div>Projects Page</div>} />
-                    <Route path="/contact" element={<div>Contact Page</div>} />
+                    <Route path="/contact" element={<Contact />} />
                 </Route>
             </Routes>
         </BrowserRouter>
