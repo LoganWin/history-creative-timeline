@@ -15,7 +15,7 @@ function App() {
 
       <section className="relative mx-auto w-full max-w-6xl px-6 pt-28 pb-16">
         <div className="flex flex-col gap-10 md:flex-row">
-          <div className="w-full md:max-w-lg space-y-6">
+          <div className="w-full md:max-w-lg space-y-8">
             <div className="space-y-6 text-left">
               <p className="text-sm uppercase tracking-[0.3em] text-blue-300/80">Interactive Educational Timeline</p>
               <h1 className="text-4xl sm:text-5xl font-bold leading-tight text-white">

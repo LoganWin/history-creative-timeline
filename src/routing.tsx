@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Timeline from './pages/Timeline';
-import About from './pages/About';
+import MoreDetails from './pages/MoreDetails';
 import App from './App';
 import Layout from './components/Layout';
-import Contact from './pages/Contact';
+import ReferencePage from './pages/ReferencePage';
 
 export function Routing() {
     return (
@@ -12,8 +12,8 @@ export function Routing() {
                 <Route element={<Layout />}>
                     <Route path="/" element={<App />} />
                     <Route path="/timeline" element={<Timeline />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/more-details" element={<MoreDetails />} />
+                    <Route path="/reference-page" element={<ReferencePage />} />
                 </Route>
             </Routes>
         </BrowserRouter>
