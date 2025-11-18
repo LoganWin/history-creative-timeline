@@ -6,7 +6,8 @@ export const coveragePoints = [
   'Key events on September 11, 2001 and immediate impacts (placeholder text)',
   'Federal and state policy responses, including legislation (placeholder text)',
   'Cultural reactions across media, sports, and public rituals (placeholder text)',
-  'Long-term debates about security, identity, and immigration (placeholder text)'
+  'Long-term debates about security, identity, and immigration (placeholder text)',
+  'Former NFL linebacker Rob McGovern volunteered for active duty in Afghanistan and later prosecuted Khalid Sheikh Mohammed and other conspirators, demonstrating how citizens joined legal responses to 9/11.',
 ];
 
 export const methodologySteps = [

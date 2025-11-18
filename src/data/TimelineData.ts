@@ -14,6 +14,12 @@ import Deportation from "../assets/Deportation.webp";
 import AxisOfEvil from "../assets/axis-of-evil.jpg";
 import TortureMemos from "../assets/torture-memos.jpg";
 import Iraq from "../assets/iraq-terrorism.jpg";
+import AUMF2 from "../assets/second-AUMF.jpg"
+import UNSC from "../assets/UN-security-council.avif"
+import DHS from "../assets/DHS.jpeg"
+import OLS from "../assets/operation-libery-sheild.jpeg"
+import OIF from "../assets/operaton-iraqi-freedom.webp"
+import CR from "../assets/commision-report.jpg"
 
 export const events = [
   {
@@ -141,50 +147,44 @@ export const events = [
     label: "Second AUMF Authorizes Force Against Iraq",
     description:
       "Congress granted the President authority to use force against Iraq over suspected WMD programs and terrorist ties. Critics later argued the law facilitated unrelated military operations.",
-    image: example,
+    image: AUMF2,
   },
   {
-    year: "Nov. 2002 – Jan. 2003",
-    label: "Special Registration Targets Specific Nationalities",
+    year: "November 8th, 2002",
+    label: "FIX FIX FIX UN Security Council passed resolution 1441",
     description:
       "The Attorney General required certain non-permanent residents from countries tied to al-Qaeda to undergo \"special registration,\" leading to thousands of deportations for technical visa violations.",
-    image: example,
+    image: UNSC,
   },
   {
     year: "November 25, 2002",
     label: "Department of Homeland Security Established",
     description:
       "Congress consolidated more than twenty federal entities into DHS, integrating immigration functions under a counterterror mission in the largest government reorganization since WWII.",
-    image: example,
+    image: DHS,
   },
   { marker: true, yearLabel: "2003" },
   {
-    year: "March 2003",
+    year: "March 18, 2003",
     label: "Operation Liberty Shield Mandates Detention",
     description:
       "Ahead of the Iraq War, the administration required asylum seekers from certain nations to be detained, drawing criticism for equating refugee status with national-origin suspicion.",
-    image: example,
+    image: OLS,
   },
   {
     year: "March 20, 2003",
     label: "Operation Iraqi Freedom Begins",
     description:
       "A U.S.-led coalition invaded Iraq without explicit UN approval, swiftly toppling Saddam Hussein but initiating a costly occupation that would last nearly a decade.",
-    image: example,
+    image: OIF,
   },
-  {
-    year: "2003–2011",
-    label: "Service and Prosecution of 9/11 Conspirators",
-    description:
-      "Former NFL linebacker Rob McGovern volunteered for active duty in Afghanistan and later prosecuted Khalid Sheikh Mohammed and other conspirators, demonstrating how citizens joined legal responses to 9/11.",
-    image: example,
-  },
+
   { marker: true, yearLabel: "2004" },
   {
     year: "July 22, 2004",
     label: "9/11 Commission Spurs Intelligence Reform",
     description:
       "The bipartisan commission concluded that intelligence agencies failed to share information, prompting the creation of the National Counterterrorism Center under the Director of National Intelligence.",
-    image: example,
+    image: CR,
   },
 ];

@@ -35,13 +35,6 @@ export function TimelineCard({ event, isFlipped, onToggle, alignRight }: Timelin
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
-              <p
-                className={`absolute bottom-3 text-xs font-semibold tracking-wide text-slate-100 uppercase ${
-                  alignRight ? "left-4 text-left" : "right-4 text-right"
-                }`}
-              >
-                {event.year}
-              </p>
             </div>
 
             {/* Content */}
@@ -58,7 +51,7 @@ export function TimelineCard({ event, isFlipped, onToggle, alignRight }: Timelin
               {/* CTA pinned bottom-right */}
               <div className="mt-auto w-full flex justify-end">
                 <button
-                  className="btn btn-primary"
+                  className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500 to-pink-500 px-4 py-2 text-sm font-semibold text-white shadow-[0_10px_25px_rgba(79,70,229,0.35)] transition hover:shadow-[0_15px_28px_rgba(219,39,119,0.4)]"
                   onClick={onToggle}
                 >
                   Learn More
@@ -88,7 +81,7 @@ export function TimelineCard({ event, isFlipped, onToggle, alignRight }: Timelin
             {/* Back button pinned bottom-right */}
             <div className="mt-auto w-full flex justify-end pt-4">
               <button
-                className="btn btn-outline btn-primary"
+                className="inline-flex items-center gap-2 rounded-full border border-white/30 px-4 py-2 text-sm font-semibold text-white/90 backdrop-blur transition hover:bg-white/10"
                 onClick={onToggle}
               >
                 Back
