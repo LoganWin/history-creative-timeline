@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes timelineFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.timeline-flow {
+  background-size: 200% 200%;
+  animation: timelineFlow 8s linear infinite;
+}
