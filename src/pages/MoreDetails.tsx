@@ -1,4 +1,4 @@
-import { coveragePoints, methodologySteps } from "../data/MoreDetailsInfo";
+import { coveragePoints, methodologySteps } from "../data/MoreDetailsData";
 
 function MoreDetails() {
   return (
