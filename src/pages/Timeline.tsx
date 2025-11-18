@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { events } from "../data/Events";
-import { TimelineCard } from "../components/TimeLineCard";
+import { events } from "../data/TimelineEvents";
+import {TimelineCard} from "../components/TimeLineCard"
 export default function Timeline() {
   const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
   let cardIndex = -1;

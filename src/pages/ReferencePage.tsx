@@ -1,4 +1,4 @@
-import { info, sources } from "../data/ReferenceInfo";
+import { info, sources } from "../data/ReferenceData";
 
 export default function ReferencePage() {
   return (
