@@ -1,4 +1,7 @@
 const coveragePoints = [
+  'How is your topic connected to both the history of American imperialism and the history of immigration? In other words, what is the historical context for your topic?',
+  'What connections can you draw between your topic and recent/current American foreign policy and/or immigration policy?',
+  '',
   'Pre-9/11 global context and domestic sentiment (placeholder text)',
   'Key events on September 11, 2001 and immediate impacts (placeholder text)',
   'Federal and state policy responses, including legislation (placeholder text)',
@@ -75,8 +78,8 @@ function About() {
         <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
           <h2 className="text-2xl font-semibold text-white mb-4">Next Steps</h2>
           <p className="text-slate-200/90">
-            Placeholder sentence about continuing research, adding new events, or integrating oral histories. Placeholder
-            sentence inviting readers to suggest additional sources or perspectives that would enrich the narrative.
+            An important warning: you can turn in the most creative thing, but if you don't fully address the questions above, I can't give you full credit. Fully responding to these questions is of the upmost importance for your creative project. As part of your creative project, you will also turn in a description or explanation of your project that helps illustrate how you answered these questions. Think about pieces displayed in museums and art galleries; many of them come accompanied by a plaque that describes/contextualizes/analyzes the piece. Your explanation can range from a paragraph to a page.
+
           </p>
         </div>
       </section>

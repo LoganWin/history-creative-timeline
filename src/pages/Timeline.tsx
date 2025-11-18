@@ -1,60 +1,70 @@
 import { useState } from "react";
 import example from "../assets/react.svg";
+import nineElevenImage from "../assets/9:11 picture.jpeg";
 
 const events = [
   {
-    year: "1990s",
-    label: "Rising Global Tensions and U.S. Involvement Abroad",
+    year: "September 11, 2001",
+    label: "The Unprecedented Attacks of September 11",
     description:
-      "Throughout the 1990s, the United States faced growing tension with Middle Eastern terrorist networks following events like the 1993 World Trade Center bombing and 1998 U.S. embassy attacks, shaping later fears about global terrorism. (CFR)",
+      "Throughout the Nineteen al-Qaeda members hijacked four commercial airliners, killing 2,977 people across New York, Washington D.C., and Pennsylvania. The attacks revealed significant failures by intelligence agencies and domestic law enforcement to share crucial information despite warnings. President Bush later noted this was the first time in 136 years Americans had known the casualties of war \"at the center of a great city\".",
+    image: nineElevenImage,
   },
   {
-    year: "2001-09-11",
-    label: "September 11 Attacks",
+    year: "September 14, 2001",
+    label: "President Vows to \"Rid the World of Evil\" and Declares National Emergency",
     description:
-      "Al-Qaeda hijackers carried out coordinated attacks on the World Trade Center and the Pentagon, killing nearly 3,000 people and shocking the nation. The tragedy reshaped American identity, media, and policy direction. (Bush, Spigel)",
+      "Al-Qaeda hijackers President George W. Bush visited the World Trade Center site, vowing to \"answer these attacks, and rid the world of evil\". He immediately declared a national state of emergency, which granted him expanded powers to mobilize the military. A subsequent emergency declaration a week later granted sweeping authority to target terrorist financing globally out coordinated attacks on the World Trade Center and the Pentagon, killing nearly 3,000 people and shocking the nation. The tragedy reshaped American identity, media, and policy direction. (Bush, Spigel)",
+    image: example,
   },
   {
-    year: "2001-09-20",
+    year: "9-20-2001",
     label: "Bush’s Address to Congress: Declaring the 'War on Terror'",
     description:
       "President George W. Bush delivered a defining speech to Congress, framing the attacks as acts of war and calling for a global campaign against terrorism. His message emphasized unity but also fueled public fear of outsiders. (Bush)",
+    image: example,
   },
   {
-    year: "2001-10-26",
+    year: "10-26-2001",
     label: "USA PATRIOT Act Signed into Law",
     description:
       "Congress passed the USA PATRIOT Act, vastly expanding government surveillance and immigration enforcement powers to prevent terrorism. Critics warned it compromised civil liberties and targeted immigrants unfairly. (Patriot Act, Tumlin)",
+    image: example,
   },
   {
     year: "2002",
     label: "Creation of the Department of Homeland Security",
     description:
       "The federal government reorganized domestic agencies under the Department of Homeland Security to centralize counterterrorism efforts. Immigration policy became more tightly linked to national security. (CFR, Tumlin)",
+    image: example,
   },
   {
     year: "2003–2004",
     label: "Cultural Response and Media Transformation",
     description:
       "Television and entertainment industries adapted to post-9/11 sensitivities. Programs emphasized patriotism and unity while often stereotyping Middle Eastern identities. Media played a key role in shaping public perception of the 'enemy.' (Spigel)",
+    image: example,
   },
   {
     year: "2004",
     label: "Legal Challenges and Civil Liberties Debates",
     description:
       "Court cases and advocacy groups began contesting elements of the PATRIOT Act. Public debate grew over how much freedom Americans should sacrifice for security. (Tumlin)",
+    image: example,
   },
   {
     year: "2006–2011",
     label: "Continuing the 'War on Terror' and Shifts in Public Perception",
     description:
       "As wars in Afghanistan and Iraq continued, Americans grew increasingly divided over the costs of the War on Terror. Immigration enforcement and surveillance remained key domestic legacies. (CFR)",
+    image: example,
   },
   {
     year: "2021",
     label: "9/11’s Legacy in American Culture and Sport",
     description:
       "Two decades later, the emotional impact of 9/11 remains strong. NFL Films’ remembrance highlights how the tragedy united communities and reinforced collective identity through public rituals. (NFL Films)",
+    image: example,
   },
 ];
 
@@ -106,13 +116,15 @@ export default function Timeline() {
                       </div>
                     ) : (
                       <>
-                        <figure className="bg-base-200 sm:w-48 w-full flex-shrink-0 flex items-center justify-center p-6">
-                          <img
-                            src={example}
-                            alt={`Visual for ${event.year}`}
-                            className="h-32 sm:h-40 w-full object-contain"
-                          />
-                        </figure>
+                       <figure className="bg-base-200 sm:w-60 w-full flex-shrink-0 flex items-center justify-center">
+  <img
+    src={event.image}
+    alt={`Visual for ${event.year}`}
+    className="w-full max-h-64 object-contain"
+  />
+</figure>
+
+
                         <div
                           className={`card-body gap-3 p-6 sm:p-8 flex-1 min-w-0 ${
                             isLeft ? "items-end text-right" : "items-start text-left"
