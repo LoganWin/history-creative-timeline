@@ -16,7 +16,7 @@ export default function Navbar() {
           <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-pink-500 rounded-lg shadow-md flex items-center justify-center font-bold text-white">
             LW
           </div>
-          <span className="text-lg font-semibold tracking-tight text-white">History Creative Timeline</span>
+          <span className="text-lg font-semibold tracking-tight text-white">War on Terror Timeline</span>
         </Link>
 
         {/* Navigation */}
