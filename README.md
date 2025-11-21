@@ -2,15 +2,15 @@
 
 An interactive, multi-page React app that traces how the U.S. responded to the 9/11 attacks between 2001–2004, highlighting connections among military action, immigration enforcement, and cultural memory. Built for WPI HI 1313: The U.S. and the World.
 
+## Purpose
+- School history project that provides a concise teaching aid that ties policy decisions to lived experience in the immediate post-9/11 era.
+- Make it easy for first-time viewers to explore events chronologically, then pivot to thematic analysis and source material.
+
 ## Overview
-- Hero landing page with CTA into the timeline.
+- Hero landing page with CTA into timeline.
 - Alternating timeline cards with flip-to-reveal context, year markers, and entrance animation as you scroll.
 - Top-level navigation to a deeper analysis page (imperialism, immigration, culture) and a references page with course metadata and works cited.
 - Fully client-side: content is supplied via typed data files; no external APIs.
-
-## Purpose
-- Provide a concise teaching aid that ties policy decisions to lived experience in the immediate post-9/11 era.
-- Make it easy for first-time viewers to explore events chronologically, then pivot to thematic analysis and source material.
 
 ## Technologies Used
 - Framework: React 19 with TypeScript, Vite 7 (React SWC plugin), React Router 7.
@@ -23,27 +23,6 @@ An interactive, multi-page React app that traces how the U.S. responded to the 9
 - **State & interaction**: `Timeline` tracks which card is flipped and uses `IntersectionObserver` to fade/slide cards in when they enter the viewport.
 - **Routing & UX**: `routing.tsx` wires pages under a shared layout; `MoreDetails` uses in-page anchor scrolling for fast section jumps; `Layout` auto-scrolls to top on route change.
 - **Styling system**: Tailwind classes drive layout/typography; DaisyUI/FlyonUI plugins extend the utility set for consistent spacing, borders, and gradients.
-
-## Project Structure
-```
-src/
-  App.tsx               Landing hero with CTA into timeline
-  routing.tsx           BrowserRouter + route map
-  components/
-    Layout.tsx          Global shell + navbar + scroll reset
-    Navbar.tsx          Top navigation links
-    TimeLineCard.tsx    Flip card used by the timeline
-  pages/
-    Timeline.tsx        Alternating vertical timeline with animations
-    MoreDetails.tsx     Thematic analysis + anchor nav
-    ReferencePage.tsx   Course info and works cited
-  data/
-    TimelineData.ts     Typed events/year markers + images
-    MoreDetailsData.ts  Narrative sections and bullet points
-    ReferenceData.ts    Course metadata and sources
-  assets/               Illustrations and photos for events
-public/                 Static assets served by Vite
-```
 
 ## Getting Started
 Prerequisites: Node 18+ is recommended for Vite 7.
