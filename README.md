@@ -58,7 +58,6 @@ yarn preview
 ## Usage
 - From the landing page, click **View Timeline** to browse events chronologically; use **Learn More** to flip each card for details.
 - Use the navbar to jump to **More Details** (section buttons scroll within the page) or **References** for course notes and sources.
-- To adjust content, edit the data files in `src/data/`; components will render updates automatically.
 
 ## Content & Input/Output
 - No runtime API calls; all content is static TypeScript data.
